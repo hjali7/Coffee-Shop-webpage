@@ -6,3 +6,234 @@
     --bg:#010103;
     --border:.1rem solid rgba(255,255,255,.3);
 }
+
+*{
+    margin: 0;
+    padding: 0;
+    outline: none;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+    border: none;
+    transition:.3s linear;
+    text-transform: capitalize;
+}
+
+html {
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+    scroll-padding-top: 9rem;
+}
+
+html::-webkit-scrollbar {
+    width: .8rem;
+}
+
+html::-webkit-scrollbar-thumb {
+    background-color: #fff;
+    border-radius: 5rem;
+}
+
+html::-webkit-scrollbar-track {
+    background: transparent;
+}
+
+body {
+    background: var(--bg);
+}
+
+.btn{
+    margin-top: 1rem;
+    display: inline-block;
+    padding:.9rem 3rem;
+    font-size: 1.7rem;
+    color:#fff;
+    background: var(--main-color);
+    cursor: pointer;
+}
+
+.btn:hover{
+    letter-spacing: .2rem;
+}
+
+#menu-btn {
+    display: none;
+}
+
+section {
+    padding: 2rem 7%;
+}
+
+.header {
+    background: var(--black);
+    position: fixed;
+    top: 0;
+    right: 0;
+    left: 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 1000;
+    padding: 1.5rem 7% ;
+    border-bottom: var(--border);
+}
+
+.header .logo {
+    height: 6rem;
+}
+
+.header .navbar a {
+    font-size: 1.6rem;
+    margin: 0 1rem;
+    color: #fff;
+}
+
+.header .navbar a:hover {
+    color: var(--main-color);
+    border-bottom: var(--border);
+    padding-bottom: .6rem;
+}
+
+.header .icons div {
+    color: #fff;
+    font-size:2.5rem ;
+    display: inline-block;
+    margin-left: 2rem;
+    cursor: pointer;
+}
+
+.header .icons div:hover {
+    color: var(--main-color);
+}
+
+.header .search-form {
+    position: absolute;
+    top: 115%;
+    right: 10%;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    transform: scaleY(0);
+    transform-origin: top;
+}
+
+.header .search-form.active {
+    transform: scale(1);
+}
+
+.header .search-form input {
+    width: 100%;
+    height: 100%;
+    text-transform:lowercase ;
+    color: var(--black);
+    padding:1rem;
+    font-size: 1.6rem;
+}
+
+.header .search-form label {
+    cursor: pointer;
+    color: var(--black);
+    font-size: 2.2rem;
+    margin-right: 1.5rem;
+}
+
+.header .cart-items-container {
+    position: absolute;
+    right: -100%;
+    top: 110%;
+    background: #fff;
+    width: 35rem;
+    height: calc(100vh - 9.5rem);
+    padding: 0 1rem;
+    border-radius: 1rem;
+    transition: right .5s ease;
+    box-shadow: -2px -2px 5px rgba(179, 168, 168, 0.5);
+}
+
+.header .cart-items-container.active {
+    right: 1%;
+}
+
+.header .cart-items-container .cart-items {
+    display: flex;
+    align-items: center;
+    margin: 2rem 0;
+    position: relative;
+}
+
+.header .cart-items-container .cart-items .fa-times {
+    position: absolute;
+    right: 1rem;
+    font-size: 2rem;
+    color: var(--black);
+}
+
+.header .cart-items-container .cart-items .fa-times:hover {
+    color: var(--main-color);
+}
+
+.header .cart-items-container .cart-items img{
+    height: 9.5rem;
+}
+
+.header .cart-items-container .cart-items .content {
+    text-align: left;
+    margin: auto 0;
+    padding-left: 1.2rem;
+}
+
+.header .cart-items-container .cart-items .content h3{ 
+    font-size: 1.6rem;
+    font-weight: 500;
+    color: var(--main-color);
+    margin-bottom: 1rem;
+}
+
+.header .cart-items-container .cart-items .content .price {
+    font-weight: bold;
+    font-size: 1.2rem;
+}
+
+.header .cart-items-container .btn {
+    text-align: center;
+    display: block;
+    margin: 0 auto;
+    color: #fff;
+    background: var(--main-color);
+    padding: .8rem;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    box-shadow: 0px 10px 15px -3px var(--main-color);
+}
+
+.header .cart-items-container .btn:hover {
+    letter-spacing: 1.5rem;
+    background:#fff;
+    color: var(--main-color)
+}
+
+.home {
+    background: url(../images/home-img.jpeg) no-repeat;
+    background-position: center;
+    background-size: cover;
+    display: flex;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.home .content {
+    max-width: 60rem;
+}
+
+.home .content h2 {
+    font-size: 6rem;
+    text-transform: uppercase;
+    color: #fff;
+}
+
+.home .content p {
+    color: #fff;
+    font-size: 1.8rem;
+    line-height: 2;
+}
