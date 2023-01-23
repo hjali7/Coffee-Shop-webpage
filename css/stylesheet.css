@@ -65,6 +65,20 @@ section {
     padding: 2rem 7%;
 }
 
+.heading {
+    text-transform: uppercase;
+    color: var(--main-color);
+    font-size: 4rem;
+    color: #fff;
+    padding-bottom: 3.5rem;
+    text-align: center;
+}
+
+.heading span {
+    color: var(--main-color);
+    text-transform: uppercase;
+}
+
 .header {
     background: var(--black);
     position: fixed;
@@ -236,4 +250,45 @@ section {
     color: #fff;
     font-size: 1.8rem;
     line-height: 2;
+}
+
+.about .row {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    background: var(--black);
+    border-radius: 1rem;
+}
+
+.about .row:hover {
+    box-shadow: .5px -.5px 5px var(--main-color);
+}
+
+.about .row .image {
+    flex: 1 1 45rem;
+}
+
+.about .row .image img {
+    width: 100%;
+}
+
+.about .row .content {
+    flex: 1 1 45rem;
+    padding: 2rem;
+}
+
+.about .row .content h3 {
+    color: #fff;
+    font-size: 3rem;
+}
+
+.about .row .content p {
+    color: #ccc;
+    line-height: 1.8;
+    font-size: 1.6rem;
+    padding: 1rem 0;
+}
+
+.about .row .content a {
+    border-radius: .5rem;
 }
