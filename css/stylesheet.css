@@ -292,3 +292,44 @@ section {
 .about .row .content a {
     border-radius: .5rem;
 }
+
+.menu .box-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit , minmax(30rem , 1fr));
+    gap: 1.5rem;
+    padding: 1rem 0;
+}
+
+.menu .box-container .box {
+    text-align: center;
+    padding: 1rem;
+    border: var(--border)
+}
+
+.menu .box-container .box img {
+    height: 10rem;
+}
+
+.menu .box-container .box h3 {
+    color: #fff;
+    font-size: 2.5rem;
+    padding: .5rem 0;
+}
+
+.menu .box-container .box .price {
+    color: #fff;
+    font-size: 2rem;
+}
+
+.menu .box-container .box .price span {
+    font-weight: lighter ; 
+    text-decoration: line-through;
+}
+
+.menu .box-container .box:hover {
+    background: #fff;
+}
+
+.menu .box-container .box:hover > * {
+    color: var(--black);
+}
