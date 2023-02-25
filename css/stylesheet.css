@@ -293,14 +293,14 @@ section {
     border-radius: .5rem;
 }
 
-.menu .box-container {
+.box-container {
     display: grid;
     grid-template-columns: repeat(auto-fit , minmax(30rem , 1fr));
     gap: 1.5rem;
     padding: 1rem 0;
 }
 
-.menu .box-container .box {
+.box-container .box {
     text-align: center;
     padding: 1rem;
     border: var(--border)
@@ -316,12 +316,12 @@ section {
     padding: .5rem 0;
 }
 
-.menu .box-container .box .price {
+.box-container .box .price {
     color: #fff;
     font-size: 2rem;
 }
 
-.menu .box-container .box .price span {
+.box-container .box .price span {
     font-weight: lighter ; 
     text-decoration: line-through;
 }
@@ -332,4 +332,35 @@ section {
 
 .menu .box-container .box:hover > * {
     color: var(--black);
+}
+
+.products .box-container .box .icons {
+    padding: 1rem;
+}
+
+.products .box-container .box .icons a {
+    font-size: 1.6rem;
+    border: var(--border);
+    padding: 1.5rem;
+    color: #fff;
+    margin: 0 .3rem ;
+}
+
+.products .box-container .box .icons a:hover {
+    background: var(--main-color);
+}
+
+.products .box-container .box img {
+    height: 25rem;
+}
+
+.products .box-container .box h3 {
+    font-size: 2.3rem;
+    color: #fff;
+    padding: .2rem 0 ;
+}
+
+.products .box-container .box .stars i{
+    color: var(--main-color);
+    font-size: 2.1rem;
 }
