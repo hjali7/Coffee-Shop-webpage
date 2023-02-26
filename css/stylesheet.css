@@ -354,7 +354,7 @@ section {
     height: 25rem;
 }
 
-.products .box-container .box h3 {
+.box-container .box h3 {
     font-size: 2.3rem;
     color: #fff;
     padding: .2rem 0 ;
@@ -363,4 +363,34 @@ section {
 .products .box-container .box .stars i{
     color: var(--main-color);
     font-size: 2.1rem;
+}
+
+.review .box-container .box {
+    padding: 2rem 3rem ;
+}
+
+.review .box-container .box p {
+    color: #ccc;
+    text-align: left;
+    font-size: 1.6rem;
+    line-height: 1.8;
+    font-weight: lighter;
+}
+
+.review .box-container .box h3 {
+    padding: 1.4rem 0;
+    font-size: 1.7rem;
+    font-weight: lighter;
+}
+
+.review .box-container .box .user {
+    border-radius: 50%;
+    object-fit: cover;
+    height: 5.5rem;
+    box-shadow:  2px -1px 4px var(--main-color);
+}
+
+.review .box-container .box .stars {
+    padding: 1rem 0;
+    color:var(--main-color)
 }
