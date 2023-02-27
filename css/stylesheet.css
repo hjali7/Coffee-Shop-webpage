@@ -437,5 +437,49 @@ section {
     background: var(--bg);
     padding: 2rem;
     color: #ccc;
-    width: 100% ;
+    width: 100%;
+}
+
+.blogs .box-container .box:hover {
+    outline: 1px solid var(--main-color);
+    outline-offset: 4px;
+    border: none;
+}
+
+.blogs .box-container .box img {
+    object-fit: cover;
+    width: 100%;
+    border: var(--border);
+}
+
+.blogs .box-container .box img:hover {
+    border: none;
+    transform: scale(.95);
+}
+
+.blogs .box-container .box .content {
+    padding: 2rem;
+    text-align: left;
+}
+
+.blogs .box-container .box .content .title{
+    font-size: 2.5rem;
+    line-height: 1.8;
+    color: #fff;
+}
+
+.blogs .box-container .box .content .title:hover {
+    color: var(--main-color);
+}
+
+.blogs .box-container .box .content span {
+    color: var(--main-color);
+    font-size: 2rem;
+    display: block;
+    padding-top: 1rem;
+}
+
+.blogs .box-container .box .content p {
+    color: #fff;
+    font-size: 1.5rem;
 }
