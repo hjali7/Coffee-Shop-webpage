@@ -483,3 +483,57 @@ section {
     color: #fff;
     font-size: 1.5rem;
 }
+
+.footer {
+    background: var(--black);
+    text-align: center;
+}
+
+.footer .share {
+    padding: 1rem 0;
+}
+
+.footer .share a {
+    width:5rem ; 
+    height: 5rem;
+    border-radius: 50%;
+    border: var(--border);
+    margin:0 .3rem;
+    line-height: 5rem;
+    color: #fff;
+    font-size: 2rem;
+}
+
+.footer .share a:hover {
+    background: var(--main-color);
+}
+
+.footer .link {
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+    padding: 2rem 0;
+}
+
+.footer .link a {
+    color: #fff;
+    font-size: 2rem;
+    border: var(--border);
+    padding: .7rem 2rem;
+    border-radius: 5px;
+}
+
+.footer .link a:hover {
+    background: #fff;
+    color: #010103;
+}
+
+.footer p {
+    color: #fff;
+    font-size: 2.2rem;
+}
+
+.footer p span {
+    color: var(--main-color);
+}
